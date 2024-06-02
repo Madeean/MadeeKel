@@ -1,12 +1,13 @@
-import SwiftUI
 import shared
+import SwiftUI
 
 struct ContentView: View {
-    
     @State private var shouldOpenAbout = false
-    
+
     var body: some View {
-        NavigationStack{
+        let articlesScreen = ArticlesScreen(viewModel: .init())
+        
+        NavigationStack {
             ArticlesScreen(viewModel: .init())
                 .toolbar {
                     ToolbarItem {
@@ -20,6 +21,8 @@ struct ContentView: View {
                         }
                     }
                 }
+        }.refreshable {
+            articlesScreen.viewModel.articlesViewModel.getArticles(forceFetch: true)
         }
     }
 }
