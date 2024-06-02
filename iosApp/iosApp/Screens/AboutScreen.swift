@@ -2,8 +2,8 @@
 //  AboutScreen.swift
 //  iosApp
 //
-//  Created by Petros Efthymiou on 23/11/2023.
-//  Copyright © 2023 orgName. All rights reserved.
+//  Created by made reihan on 01/06/24.
+//  Copyright © 2024 orgName. All rights reserved.
 //
 
 import SwiftUI
