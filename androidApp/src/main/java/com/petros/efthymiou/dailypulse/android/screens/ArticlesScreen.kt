@@ -37,7 +37,7 @@ import com.petros.efthymiou.dailypulse.articles.application.Article
 import com.petros.efthymiou.dailypulse.articles.presentation.ArticlesViewModel
 import org.koin.androidx.compose.getViewModel
 
-//
+
 @Composable
 fun ArticlesScreen(
   onAboutButtonClick: () -> Unit,
