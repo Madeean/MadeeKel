@@ -1,11 +1,13 @@
-package com.petros.efthymiou.dailypulse.articles
+package com.petros.efthymiou.dailypulse.articles.presentation
 
 import com.petros.efthymiou.dailypulse.BaseViewModel
+import com.petros.efthymiou.dailypulse.articles.application.ArticlesUseCase
+import com.petros.efthymiou.dailypulse.articles.presentation.ArticlesState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
-class ArticlesViewModel(private val useCase:ArticlesUseCase): BaseViewModel() {
+class ArticlesViewModel(private val useCase: ArticlesUseCase): BaseViewModel() {
 
     private val _articlesState: MutableStateFlow<ArticlesState> = MutableStateFlow(ArticlesState(loading = true))
 
